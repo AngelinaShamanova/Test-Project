@@ -26,19 +26,19 @@ creditAmountLabel, commentLabel, comment, statusImageView;
         
         dateLabel = [[UILabel alloc]init];
         dateLabel.textAlignment = NSTextAlignmentLeft;
-        dateLabel.font = [UIFont systemFontOfSize:10];
+        dateLabel.font = [UIFont systemFontOfSize:12];
         
         creditAmountLabel = [[UILabel alloc]init];
         creditAmountLabel.textAlignment = NSTextAlignmentLeft;
-        creditAmountLabel.font = [UIFont systemFontOfSize:12];
+        creditAmountLabel.font = [UIFont systemFontOfSize:16];
         
         comment = [[UILabel alloc]init];
         comment.textAlignment = NSTextAlignmentLeft;
-        comment.font = [UIFont systemFontOfSize:10];
+        comment.font = [UIFont systemFontOfSize:12];
 
         commentLabel = [[UILabel alloc]init];
         commentLabel.textAlignment = NSTextAlignmentLeft;
-        commentLabel.font = [UIFont systemFontOfSize:10];
+        commentLabel.font = [UIFont systemFontOfSize:12];
         
         statusImageView = [[UIImageView alloc]init];
         

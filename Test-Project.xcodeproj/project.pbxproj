@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		FA49160725A080E20068D349 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA49160625A080E20068D349 /* CustomCell.m */; };
+		FA8F66F025A115C30012486C /* NSMutableAttributedString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8F66EF25A115C30012486C /* NSMutableAttributedString+Color.m */; };
 		FAB69279259F5BA500CB163F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB69278259F5BA500CB163F /* AppDelegate.m */; };
-		FAB6927F259F5BA500CB163F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6927E259F5BA500CB163F /* ViewController.m */; };
+		FAB6927F259F5BA500CB163F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6927E259F5BA500CB163F /* TableViewController.m */; };
 		FAB69284259F5BA800CB163F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB69283259F5BA800CB163F /* Assets.xcassets */; };
 		FAB69287259F5BA800CB163F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB69285259F5BA800CB163F /* LaunchScreen.storyboard */; };
 		FAB6928A259F5BA800CB163F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB69289259F5BA800CB163F /* main.m */; };
 		FAB692A0259FAA7B00CB163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB6929F259FAA7B00CB163F /* Main.storyboard */; };
-		FAB692A3259FABA900CB163F /* CreditApplicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB692A2259FABA900CB163F /* CreditApplicationCell.m */; };
+		FAB692A3259FABA900CB163F /* CreditApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB692A2259FABA900CB163F /* CreditApplication.m */; };
 		FAD5C8D525A0A10900EA4047 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD5C8D225A0A10900EA4047 /* red.png */; };
 		FAD5C8D725A0A10900EA4047 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD5C8D425A0A10900EA4047 /* green.png */; };
 		FAD5C8DB25A0A45E00EA4047 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD5C8DA25A0A45E00EA4047 /* yellow.png */; };
@@ -23,21 +24,24 @@
 /* Begin PBXFileReference section */
 		FA49160425A080A80068D349 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		FA49160625A080E20068D349 /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		FA8F66EE25A115A80012486C /* NSMutableAttributedString+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Color.h"; sourceTree = "<group>"; };
+		FA8F66EF25A115C30012486C /* NSMutableAttributedString+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Color.m"; sourceTree = "<group>"; };
 		FAB69274259F5BA500CB163F /* Test-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB69277259F5BA500CB163F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAB69278259F5BA500CB163F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FAB6927D259F5BA500CB163F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAB6927E259F5BA500CB163F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FAB6927D259F5BA500CB163F /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		FAB6927E259F5BA500CB163F /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		FAB69283259F5BA800CB163F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB69286259F5BA800CB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB69288259F5BA800CB163F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB69289259F5BA800CB163F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAB6929F259FAA7B00CB163F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		FAB692A2259FABA900CB163F /* CreditApplicationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditApplicationCell.m; sourceTree = "<group>"; };
-		FAB692A5259FABBD00CB163F /* CreditApplicationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditApplicationCell.h; sourceTree = "<group>"; };
+		FAB692A2259FABA900CB163F /* CreditApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditApplication.m; sourceTree = "<group>"; };
+		FAB692A5259FABBD00CB163F /* CreditApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditApplication.h; sourceTree = "<group>"; };
 		FAD5C8D225A0A10900EA4047 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		FAD5C8D425A0A10900EA4047 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		FAD5C8DA25A0A45E00EA4047 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		FAD5C8E825A0D92C00EA4047 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +55,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA4915FF25A080060068D349 /* View */ = {
+		FA4915FF25A080060068D349 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FAB6927D259F5BA500CB163F /* ViewController.h */,
-				FAB6927E259F5BA500CB163F /* ViewController.m */,
-				FAB692A2259FABA900CB163F /* CreditApplicationCell.m */,
-				FAB692A5259FABBD00CB163F /* CreditApplicationCell.h */,
-				FAB6929F259FAA7B00CB163F /* Main.storyboard */,
-				FAB69285259F5BA800CB163F /* LaunchScreen.storyboard */,
-				FA49160325A080900068D349 /* Cell */,
+				FAB6927D259F5BA500CB163F /* TableViewController.h */,
+				FAB6927E259F5BA500CB163F /* TableViewController.m */,
 			);
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		FA49160025A080220068D349 /* Supporting Files */ = {
@@ -105,9 +104,16 @@
 		FAB69276259F5BA500CB163F /* Test-Project */ = {
 			isa = PBXGroup;
 			children = (
-				FA4915FF25A080060068D349 /* View */,
+				FA4915FF25A080060068D349 /* Controller */,
+				FAD5C8EA25A0D96F00EA4047 /* Model */,
+				FA49160325A080900068D349 /* Cell */,
+				FAD5C8E725A0D90C00EA4047 /* JSON */,
+				FAB6929F259FAA7B00CB163F /* Main.storyboard */,
+				FAB69285259F5BA800CB163F /* LaunchScreen.storyboard */,
 				FAD5C8D125A0A0E600EA4047 /* Images */,
 				FA49160025A080220068D349 /* Supporting Files */,
+				FA8F66EE25A115A80012486C /* NSMutableAttributedString+Color.h */,
+				FA8F66EF25A115C30012486C /* NSMutableAttributedString+Color.m */,
 			);
 			path = "Test-Project";
 			sourceTree = "<group>";
@@ -120,6 +126,23 @@
 				FAD5C8DA25A0A45E00EA4047 /* yellow.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		FAD5C8E725A0D90C00EA4047 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5C8E825A0D92C00EA4047 /* data.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FAD5C8EA25A0D96F00EA4047 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB692A5259FABBD00CB163F /* CreditApplication.h */,
+				FAB692A2259FABA900CB163F /* CreditApplication.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,10 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB6927F259F5BA500CB163F /* ViewController.m in Sources */,
+				FAB6927F259F5BA500CB163F /* TableViewController.m in Sources */,
 				FAB69279259F5BA500CB163F /* AppDelegate.m in Sources */,
+				FA8F66F025A115C30012486C /* NSMutableAttributedString+Color.m in Sources */,
 				FAB6928A259F5BA800CB163F /* main.m in Sources */,
-				FAB692A3259FABA900CB163F /* CreditApplicationCell.m in Sources */,
+				FAB692A3259FABA900CB163F /* CreditApplication.m in Sources */,
 				FA49160725A080E20068D349 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

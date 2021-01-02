@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     self.window = UIWindow.new;
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:ViewController.new];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:TableViewController.new];
     
     return YES;
 }

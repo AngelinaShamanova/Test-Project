@@ -1,5 +1,5 @@
 //
-//  CreditApplicationCell.h
+//  CreditApplication.h
 //  Test-Project
 //
 //  Created by Angelina on 01.01.2021.
@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CreditApplicationCell : NSObject
+@interface CreditApplication : NSObject
 
 @property (strong, nonatomic) NSString *fullName;
 @property (strong, nonatomic) NSString *date;
