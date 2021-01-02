@@ -8,27 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		FAB69279259F5BA500CB163F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB69278259F5BA500CB163F /* AppDelegate.m */; };
-		FAB6927C259F5BA500CB163F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6927B259F5BA500CB163F /* SceneDelegate.m */; };
 		FAB6927F259F5BA500CB163F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6927E259F5BA500CB163F /* ViewController.m */; };
-		FAB69282259F5BA500CB163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB69280259F5BA500CB163F /* Main.storyboard */; };
 		FAB69284259F5BA800CB163F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB69283259F5BA800CB163F /* Assets.xcassets */; };
 		FAB69287259F5BA800CB163F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB69285259F5BA800CB163F /* LaunchScreen.storyboard */; };
 		FAB6928A259F5BA800CB163F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB69289259F5BA800CB163F /* main.m */; };
+		FAB692A0259FAA7B00CB163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB6929F259FAA7B00CB163F /* Main.storyboard */; };
+		FAB692A3259FABA900CB163F /* CreditApplicationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB692A2259FABA900CB163F /* CreditApplicationCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAB69274259F5BA500CB163F /* Test-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB69277259F5BA500CB163F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAB69278259F5BA500CB163F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FAB6927A259F5BA500CB163F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		FAB6927B259F5BA500CB163F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		FAB6927D259F5BA500CB163F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FAB6927E259F5BA500CB163F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FAB69281259F5BA500CB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB69283259F5BA800CB163F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB69286259F5BA800CB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB69288259F5BA800CB163F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB69289259F5BA800CB163F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB6929F259FAA7B00CB163F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FAB692A2259FABA900CB163F /* CreditApplicationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditApplicationCell.m; sourceTree = "<group>"; };
+		FAB692A5259FABBD00CB163F /* CreditApplicationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditApplicationCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +63,11 @@
 			children = (
 				FAB69277259F5BA500CB163F /* AppDelegate.h */,
 				FAB69278259F5BA500CB163F /* AppDelegate.m */,
-				FAB6927A259F5BA500CB163F /* SceneDelegate.h */,
-				FAB6927B259F5BA500CB163F /* SceneDelegate.m */,
 				FAB6927D259F5BA500CB163F /* ViewController.h */,
 				FAB6927E259F5BA500CB163F /* ViewController.m */,
-				FAB69280259F5BA500CB163F /* Main.storyboard */,
+				FAB692A2259FABA900CB163F /* CreditApplicationCell.m */,
+				FAB692A5259FABBD00CB163F /* CreditApplicationCell.h */,
+				FAB6929F259FAA7B00CB163F /* Main.storyboard */,
 				FAB69283259F5BA800CB163F /* Assets.xcassets */,
 				FAB69285259F5BA800CB163F /* LaunchScreen.storyboard */,
 				FAB69288259F5BA800CB163F /* Info.plist */,
@@ -106,6 +106,7 @@
 				TargetAttributes = {
 					FAB69273259F5BA500CB163F = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -132,9 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB692A0259FAA7B00CB163F /* Main.storyboard in Resources */,
 				FAB69287259F5BA800CB163F /* LaunchScreen.storyboard in Resources */,
 				FAB69284259F5BA800CB163F /* Assets.xcassets in Resources */,
-				FAB69282259F5BA500CB163F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,21 +149,13 @@
 				FAB6927F259F5BA500CB163F /* ViewController.m in Sources */,
 				FAB69279259F5BA500CB163F /* AppDelegate.m in Sources */,
 				FAB6928A259F5BA800CB163F /* main.m in Sources */,
-				FAB6927C259F5BA500CB163F /* SceneDelegate.m in Sources */,
+				FAB692A3259FABA900CB163F /* CreditApplicationCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FAB69280259F5BA500CB163F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAB69281259F5BA500CB163F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAB69285259F5BA800CB163F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,6 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DCJXSY8PS;
 				INFOPLIST_FILE = "Test-Project/Info.plist";
@@ -300,6 +294,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Test-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DCJXSY8PS;
 				INFOPLIST_FILE = "Test-Project/Info.plist";
@@ -318,6 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Test-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
