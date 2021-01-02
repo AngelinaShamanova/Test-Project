@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "CreditApplicationCell.h"
+#import "CustomCell.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,14 @@
 
 @implementation ViewController
 
-NSString *cellId = @"cellId";
+//NSString *cellIdentifier = @"cellIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self fetchData];
     self.navigationItem.title = @"Заявки на кредит";
     self.navigationController.navigationBar.prefersLargeTitles = YES;
-    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:cellId];
+//    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:cellIdentifier];
 }
 
 - (void)fetchData {
@@ -46,7 +47,7 @@ NSString *cellId = @"cellId";
         NSMutableArray<CreditApplicationCell *> *creditApplications = NSMutableArray.new;
         for (NSDictionary *dict in jsonFile) {
             NSString *fullName = dict[@"fullName"];
-            NSNumber *creditAmount = dict[@"creditAmount"];
+            NSString *creditAmount = dict[@"creditAmount"];
             NSString *date = dict[@"date"];
             NSString *applicationStatus = dict[@"applicationStatus"];
             NSString *comment = dict[@"comment"];
@@ -69,17 +70,41 @@ NSString *cellId = @"cellId";
     }] resume];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+ return 150;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.creditApplication.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     
+    static NSString *cellIdentifier = @"Cell";
+    
+        CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        if (cell == nil) {
+            cell = [[CustomCell alloc] initWithFrame:CGRectZero];
+        }
+
     CreditApplicationCell *creditApplication = self.creditApplication[indexPath.row];
     
-    cell.textLabel.text = creditApplication.fullName;
-
+    cell.fullNameLabel.text = creditApplication.fullName;
+    cell.applicationStatuslabel.text = creditApplication.applicationStatus;
+    cell.dateLabel.text = creditApplication.date;
+    cell.creditAmountLabel.text = creditApplication.creditAmount;
+    cell.commentLabel.text = @"Комментарий:";
+    cell.comment.text = creditApplication.comment;
+    
+    if ([cell.applicationStatuslabel.text  isEqual: @"Одобрена"]) {
+        cell.statusImageView.image = [UIImage imageNamed:@"green.png"];
+    } else if ([cell.applicationStatuslabel.text  isEqual: @"На рассмотрении"]) {
+        cell.statusImageView.image = [UIImage imageNamed:@"yellow.png"];
+    } else {
+        cell.statusImageView.image = [UIImage imageNamed:@"red.png"];
+    }
+    
     return cell;
 }
 
